@@ -1,0 +1,103 @@
+//divido en dos categorias si GRE > o < a 500 y si GPA es > o < a 3
+GRE1 = 0;
+GRE2 = 0;
+GPA1 = 0;
+GPA2 = 0;
+ad1 = 0;
+ad0 = 0;
+r1 = 0;
+r2 = 0;
+r3 = 0;
+r4 = 0;
+total 
+
+
+for lista de comienzo a final
+  if admit = 1
+    ad1 = ad1 + 1;
+    if GRE < 500
+      GRE1 = GRE1 + 1;
+      ad1&GRE1 = ad1&GRE1 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad1&GRE1&r(i) = ad1&GRE1&r(i) + 1;
+    else 
+      GRE2 = GRE2 + 1;
+      ad1&GRE2 = ad1&GRE2 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad1&GRE2&r(i) = ad1&GRE2&r(i) + 1;
+    if GPA < 3
+      GPA1 = GPA1 + 1;
+      ad1&GPA1 = ad1&GPA1 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad1&GPA1&r(i) = ad1&GPA1&r(i) + 1;
+    else
+      GPA2 = GPA2 + 1;
+      ad1&GPA2 = ad1&GPA2 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad1&GPA2&r(i) = ad1&GPA2&r(i) + 1;
+  else
+    ad0 = ad0 + 1;
+    if GRE < 500
+      GRE1 = GRE1 + 1;
+      ad0&GRE1 = ad0&GRE1 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad0&GRE1&r(i) = ad0&GRE1&r(i) + 1;
+    else 
+      GRE2 = GRE2 + 1;
+      ad0&GRE2 = ad0&GRE2 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad0&GRE2&r(i) = ad0&GRE2&r(i) + 1;
+    if GPA < 3
+      GPA1 = GPA1 + 1;
+      ad0&GPA1 = ad0&GPA1 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad0&GPA1&r(i) = ad0&GPA1&r(i) + 1;
+    else
+      GPA2 = GPA2 + 1;
+      ad0&GPA2 = ad0&GPA2 + 1;
+      for rank 1 to 4
+        rank (i) = rank (i) + 1;
+        ad0&GPA2&r(i) = ad0&GPA2&r(i) + 1; 
+        
+        
+   
+  
+   
+   
+p(r1) = r1/total;
+p(GRE1&r1) = GRE1&r1/total
+p(GRE1&r2) = GRE1&r2/total
+p(ad0&GRE1&r1) = ad0&GRE1&r1/total
+p(ad1&GRE1&r1) = ad1&GRE1&r1/total
+
+p(GRE1/r1) = 
+
+p(GRE1) = GRE1/total;
+p(ad0&GRE1&r1)= ad0&GRE1&r1/total;
+p(a0/GRE1/r1) = p(ad0&GRE1&r1)/[p(r1)*p(GRE1)];
+
+p(GRE2) = GRE2/total;
+p(ad0&GRE2&r1)= ad0&GRE2&r1/total;
+p(a0/GRE2/r1) = p(ad0&GRE2&r1)/[p(r1)*p(GRE2)];
+
+p(GPA1) = GPA1/total;
+p(ad0&GPA1&r1)= ad0&GPA1&r1/total;
+p(a0/GPA1/r1) = p(ad0&GPA1&r1)/[p(r1)*p(GPA1)];
+
+p(GPA2) = GPA2/total;
+p(ad0&GPA2&r1)= ad0&GPA2&r1/total;
+p(a0/GPA2/r1) = p(ad0&GPA2&r1)/[p(r1)*p(GPA2)];
+
+p(ad0/r=1) = (p(a0/GRE1/r1) + p(a0/GRE2/r1) + p(a0/GPA1/r1) + p(a0/GPA2/r1))/p(r1);
+
+
+
+p(ad0/GRE2/r1)= p(ad0/GRE2/r1)/total;
+p(GRE2) = GRE1/total;
